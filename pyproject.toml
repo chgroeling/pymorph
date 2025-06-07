@@ -1,0 +1,26 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "pymorph"          
+version = "0.1.0"               
+description = "A Python tool that generates efficient C++ bit pattern matching algorithms from a simple YAML configuration file."
+authors = [
+    {name = "Christian Gröling", email = "contact@christiangroeling.de"}
+]
+requires-python = ">=3.11"
+license = "MIT"                 
+readme = "README.md"            
+
+#[project.scripts]
+#decoder-forge = "decoder_forge.main:main"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[tool.poetry.dependencies]
+sphinx = "^8.2.3"
+sphinx-rtd-theme = "^3.0.2"
+charset-normalizer = "^3.4.2"
